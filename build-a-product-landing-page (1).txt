@@ -1,0 +1,464 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chartset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Mirror</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- TODO: Add more applicable link elements -->
+  </head>
+  <body>
+    <div class="heading">
+      <header id="header" class="hero">
+       <div class="hero-title">
+        <h1>GlowWave</h1>
+        <h2>Reflecting Beauty, Perfecting Your Routine</h2></div>
+      <div class="sub-headline"><p>
+        Experience flawless beauty with AI-powered skin analysis, adaptive lighting, and personalized care tips - all in one smart mirror.
+      </p></div>
+       
+        <div class="navbar">
+          
+<img id="header-img" class="header-img" src="https://img.freepik.com/premium-photo/modern-makeup-smart-digital-mirror-with-backlight-3d-rendering_476612-29634.jpg?ga=GA1.1.207666744.1742658360&semt=ais_hybrid" alt="smart-mirror"  />
+          <nav id="nav-bar">
+        <ul class="list">
+          <li class="btn"><a class="nav-link" href="#pricing"> Pre-Order Now </a></li>
+          <li class="btn"><a class="nav-link" href="#learn-more"> Learn More </a></li>
+          <li class="btn"><a class="nav-link" href="#testimonials"> Testimonials </a></li>
+        </ul>
+      </nav></div></header></div>
+    
+    
+    </div>
+    
+    <div id="learn-more" class="general-info">
+      <h3>Smart, Simple, and Stunning</h3>
+      
+        <div class="steps"><h4>Set Up & Connect</h4>
+        <p>Easily connect GlowWave to Wi-Fi and sync it with the GlowWave app in just minutes.</p>
+         <h4>Personalize Your Profile</h4>
+        <p>Input your skin type, routine preferences, and beauty goals to tailor your experiene.</p><h4>Let GlowWave Guide You</h4>
+        <p>Enjoy daily personalized skincare recommendations, flawless lighting adjustments, and seamless control.</p>
+    </div>
+     <div class="videos">
+       <h4>How to use Smart Mirror</h4>
+       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/QfrH9XrtuPE?si=StCIKBX9yKVchpB6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </div>
+    </div>
+    <div id="pricing" class="prices">
+      <h3>Pre-Order Now and Save 20%</h3>
+      <h4>Limited-Time Offer</h4>
+      <p>Pre-order before 5/11/2025 to receive 20% off and enjoy free shipping!</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter your email address" reqiured >
+      <input type="submit" id="submit" value="Start Saving Now">
+      </form>
+      <div class="price-options">
+        <div class="edition"><h4 class="package">Basic Edition - $199</h4>
+        <p class="details"><ul>
+        <li>Standard skin analysis</li>
+        <li>Customizable LED lighting</li>
+        <li>Basic app integration</li>
+      </ul></p></div><div class="edition">
+         <h4 class="package">Pro Edition - $299</h4>
+        <p class="details"><ul>
+        <li>Advanced AI skin analysis with detailed insights</li>
+        <li>Voice control with Alexa and Google Assistant</li>
+        <li>Smart calendar sync for reminders and weather updates</li>
+      </ul></p></div>
+      </div>
+    </div>
+    <div id="testimonials" class="testimonies">
+      <div class="testimony-one"><h4 class="testimony">"GlowWave has tranformed my skincare routine! I've never felt more confident knowing exactly what my skin needs."</h4> <p class="author">- Jessica M.</p>
+      <p class="client-type">Verified Customer</p></div>
+      <div class="testimony-two">
+      <h4 class="testimony">"The customizable lighting ensures my makeup looks flawless in any environment. I can't imagine my routine without it!"</h4> <p class="author">- Samantha K.</p>
+      <p class="client-type">Beauty Enthusiast</p>
+</div>
+ <div class="testimony-three">
+      <h4 class="testimony">"Seeing my skin's progress over time has been amazing. GlowWave keeps me on track with my goals!"</h4> <p class="author">- Lisa R.</p>
+      <p class="client-type">Daily User</p>
+    </div>
+      </div>
+    </div>
+   
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+:root {
+  --button-color1: #5f98e2;
+  --button-color2: white;
+  --background-color1: #cbcbcb;
+  --background-color2: gray;
+}
+
+* {
+font-family: Arial, sans-serif;
+}
+
+.body {
+  margin: 0;
+}
+
+/* HEADING BANNER */
+
+.heading {
+  margin: auto;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; 
+  height: 25%;
+  min-height: 165px;
+  position: fixed;
+background: linear-gradient(to right,
+    var(--background-color1),
+    var(--button-color2) 40%); 
+  z-index: 1;
+}
+
+header {
+  width: 100%;
+  justify-content: space-between;   
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+grid-column-gap: 10px;
+grid-template-rows: 100px auto;
+}
+
+.hero-title {
+display: inline-block;
+margin: auto;
+grid-column: 1;
+width: 100%;
+height: 100%;
+padding-top: 20px;
+}
+
+h1, h2 {
+  justify-content: left;
+  align-items: center;
+  padding: 0 10px;
+}
+
+h2 {
+ padding-top: 10px; 
+}
+
+.sub-headline {
+
+grid-column: 2;
+margin: auto;
+width: 100%;
+height: 100%;
+padding-top: 75px;
+align-items: center;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  position: relative;
+  padding-right: 20px;
+  padding-left: 5px;
+  grid-column: 3;
+  margin: auto;
+  display: inline-grid;
+}
+
+img {
+  z-index: -1;
+  opacity: .25;
+  width: 100%;
+  max-height: 175%;
+  position: absolute;
+  object-fit: contain;
+}
+
+nav { 
+  padding-left: 70px;
+}
+
+nav ul li a{
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.btn {
+  background-color: var(--button-color1);
+  color: var(--button-color2);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+
+a {
+  color: var(--button-color2);
+}
+
+a:visited {
+  color: var(--background-color2);
+}
+
+a:hover {
+  color: yellow;
+}
+
+.btn:hover {
+  background-color: var(--background-color2);
+}
+
+/* PAGE CONTENT */
+
+.general-info h3 {
+  text-align: center;
+  padding-bottom: 0;
+  padding-top: 275px;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 0;
+}
+
+.general-info h4 {
+  font-size: 1.1rem;
+  line-height: 0;
+}
+
+.steps {
+width: 90%;
+padding-top: 0px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+grid-column-gap: 10px;
+grid-row: 3 auto;
+border-bottom: solid var(--background-color2);
+}
+
+.steps h4:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+  float: left;
+}
+
+.steps h4:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  float: left;
+}
+
+.steps h4:nth-of-type(3) {
+  grid-column: 3;
+  grid-row: 2;
+  position: relative;
+  float: left;
+}
+
+.steps p:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 3;
+  position: relative;
+  float: left;
+}
+
+.steps p:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 3;
+  position: relative;
+  float: left;
+}
+.steps p:nth-of-type(3) {
+  grid-column: 3;
+  grid-row: 3;
+  position: relative;
+  float: left;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+
+
+.prices {
+width: 90%;
+padding-top: 0;
+padding-bottom: 20px;
+margin: auto;
+}
+
+.prices h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.prices h4 {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 0;
+}
+
+.prices p, .prices form {
+  text-align: center;
+  line-height: 0;
+}
+
+.price-options {
+width: 90%;
+padding-top: 10px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+grid-column-gap: 10px;
+grid-row: 2 auto;
+}
+
+.edition {
+border: solid var(--background-color2);
+border-radius: 20%;
+border-width: 1.7px;
+}
+
+
+
+.price-options h4 {
+  padding-left: 10px;
+  padding-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.price-options h4:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 1;
+  position: relatie;
+  float: center;
+  text-align: center;
+
+}
+
+.price-options p:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+  float: left;
+  
+}
+
+.price-options h4:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  float: left;
+}
+
+.price-options p:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  float: left;
+}
+
+.testimonies {
+width: 90%;
+padding-top: 5px;
+padding-bottom: 50px;
+
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+grid-column-gap: 10px;
+grid-row: 3 auto;
+border-top: solid var(--background-color2);
+}
+
+.testimony {
+  padding: 0 5px 0 5px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.testimony-one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.testimony-two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.testimony-three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.author, .client-type {
+  line-height: 0;
+}
+
+.author {
+   font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 1000px), screen and (max-height: 640px) {
+  .header {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      max-height: 150px;
+  }
+  .heading{
+    display: flex;
+    font-size: 75%;
+  }  
+  .general-info, .testimonies, .prices {
+    width: 770px;
+    justify-content: center;
+    margin: auto;
+    padding: 0 auto;
+  }
+  .sub-headline {
+padding-top: 0;
+  }
+  * {
+    overflow: visible;
+  }
+  nav {
+    position: none;
+    padding: 0;
+  }
+  
+}
+
+
+
+
+** end of styles.css **
+
